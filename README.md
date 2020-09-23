@@ -44,7 +44,9 @@ The full version adds information from a pre-trained classifier. You can think o
 You'll start getting some results after about 8 hours on a google-colab but its hard to train it for longer period with larger dataset as google-colab gives only 12gb ram, which will frequently overload and crash with this network.
 
 ## Acknowledgments
-- Thanks to emilwallner's article and work in this project , kindly follow his article to understand in depth.
+- Thanks to [emilwallner's](https://github.com/emilwallner/Coloring-greyscale-images) article and work in this project , kindly follow his article to understand in depth.
+- [Also read](https://www.freecodecamp.org/news/colorize-b-w-photos-with-a-100-line-neural-network-53d9b4449f8d/) 
+- [Dataset](https://www.floydhub.com/emilwallner/datasets/colornet/2/images)
 
 
 **A far better model / result can be achieve but it will need a alot more powerful gpu.**
