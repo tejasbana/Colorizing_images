@@ -13,12 +13,12 @@ neural network to color black and white photos
 
 **My test dataset was big enough to find few good results** 
 
-**Note:**  A large majority of the images are lightly colored in brown. A narrow and simple dataset often creates better results.
+**Note:**  A large majority of the images are lightly colored in brown. As color brown gives a much lower loss value.  A limited and basic dataset makes better outcomes.
 
 
 
 ## Beta_try Version
- An image is transformed into RGB pixel values and  translated into LAB pixel values. It also builds a core intuition for how the network learns. How the network compares the input with the output and adjusts the network. 
+ An image translated into LAB pixel values. It also builds a core intuition for how the network learns. How the network compares the input with the output and adjusts the network. 
 
 <p ><img src="https://github.com/tejasbana/Colorizing_black-White_images/blob/master/experiments/10%20epochs/dataset0.png" width="255px">
     <img src="https://github.com/tejasbana/Colorizing_black-White_images/blob/master/experiments/10%20epochs/dataset4(2).png"400px">
@@ -27,10 +27,10 @@ neural network to color black and white photos
 
 </p>
 
-In this version,result images are colored brown as the network is not big enough and not been trained for longer duration. This neural network  is to build an intuition for the purpose of the final version and is simple enough to implement easily. 
+In this version,result images are colored brown as the network is not big enough and not been trained for longer duration. This neural network builds an intuition for the purpose of the final version and is simple enough to implement easily. 
 
 ## Full Version
-The full version adds information from a pre-trained classifier. You can think of the information as 20% nature, 30% humans, 30% sky, and 20% brick buildings. It then learns to combine that information with the black and white photo. It gives the network more confidence to color the image. Otherwise, it tends to default to the safest color, brown.
+The full version adds information from a pre-trained classifier. It then learns to combine that information with the black and white photo. It gives the network more confidence to color the image. Otherwise, it tends to default to the safest color, brown.
 
 
 
@@ -41,7 +41,7 @@ The full version adds information from a pre-trained classifier. You can think o
 
 </p>
 
-You'll start getting some results after about 8 hours on a google-colab but its hard to train it for longer period with larger dataset as google-colab gives only 12gb ram, which will frequently overload and crash with this network.
+You'll start getting some results after about 8 hours on a google-colab free GPU but its hard to train it for longer period of time with large dataset as google-colab gives only 12gb ram, which often overloads and crashes with this network.
 
 ## Acknowledgments
 - Thanks to [emilwallner's](https://github.com/emilwallner/Coloring-greyscale-images) article and work in this project , kindly follow his article to understand in depth.
@@ -49,4 +49,4 @@ You'll start getting some results after about 8 hours on a google-colab but its 
 - [Dataset](https://www.floydhub.com/emilwallner/datasets/colornet/2/images)
 
 
-**A far better model / result can be achieve but it will need a alot more powerful gpu.**
+**Currently Learning GANS to build a better model.**
